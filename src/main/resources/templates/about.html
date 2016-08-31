@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--header image-->
+<div class="container">
+    <div class="jumbotron" style="background:transparent !important">
+        <a href="index.html" class="view">
+            <img class="img-responsive"
+                 src="../static/images/cvriheader.jpg">
+        </a>
+    </div>
+</div>
+
+<!--Navbar-->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!--Menu Items-->
+        <div class="navbar-collapse collapse" id="mainNavBar">
+            <!--unordered list left-->
+            <ul class="nav navbar-nav">
+                <!--list items-->
+                <li class="active"><a href="about.html">About CVRI</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+
+            </ul>
+            <!--unordered list right-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="director.html">CVRI Director</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--grid columns should add up to twelve for a row-->
+<!-- Post Content -->
+<!--container is fixed and container-fluid doesnt-->
+<div class="container-fluid" id="content">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-7">
+            <h1 class="section-heading">Cardiovascular Research Institute</h1>
+
+            <p>The Cardiovascular Research Institute (CVRI) was established in July, 1999 as a Center of
+                Research Excellence. The CVRI is one of the first cardiovascular institutes of its kind at a
+                historically minority institution. It was initially funded, in part, by a grant from the
+                National Institutes of Health (NIH) National Center for Minority Health and Health Disparities
+                and the NIH Heart, Lung, Blood Institute program to develop cardiovascular research centers at
+                historically black colleges and universities (HBCUs). The CVRI is a multi-investigator,
+                multidisciplinary organization that transcends traditional academic departmental structures to
+                focus on advancing cardiovascular research and education.</p>
+
+            <p>Over the past decade, the CVRI has successfully recruited a talented critical mass of faculty
+                with a wide breadth of scientific expertise that has enriched the intellectual capital of the
+                institution and created one of the largest research portfolios at MSM.</p>
+
+            <p>Our ongoing process of strategic planning and evaluation has enabled CVRI to build upon its
+                success and emerge as an internationally recognized Center of Excellence in cardiovascular
+                science. Our approach focuses on: faculty, research infrastructure and our future
+                scientists.</p>
+
+            <h2 class="section-heading">The Four Primary Goals of CVRI:</h2>
+
+            <ul>
+                <li>To mentor and develop a critical mass of talented investigators that emerge as leaders of
+                    independent research programs and cross-disciplinary, collaborative research teams.
+                </li>
+
+                <li>To establish enabling technologies and a shared-use research infrastructure that supports
+                    leading-edge cardiovascular science.
+                </li>
+
+                <li>To expand the racial/ethnic diversity of the biomedical research community by sustaining a
+                    vibrant intellectual environment conducive to training and nurturing the development of
+                    minority students into leading investigators.
+                </li>
+
+                <li>To develop innovative, cross-disciplinary research programs that integrate basic,
+                    translational, clinical and population science approaches to address racial/ethnic
+                    disparities in cardiovascular health.
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <img class="img-responsive"
+                 id="cardio"
+                 src="../static/images/cardiovascular.jpg">
+        </div>
+    </div>
+</div>
+
+<!--pfd letter-->
+<div class="container" id="content_container">
+    <div class="row" id="content_row">
+        <h1 align="center" class="section-heading">Letter from <a href="director.html">Director Dr. Taylor</a></h1>
+        <embed class="pdfobject" id="content_pdf" src="../static/pdf/cvridirectorsletter.pdf"
+               type="application/pdf" style="overflow: auto; width: 75%; height: 100%;" internalinstanceid="81"
+               title="">
+        </embed>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

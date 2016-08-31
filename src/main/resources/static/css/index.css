@@ -1,0 +1,54 @@
+.jumbotron {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 530px;
+    margin: 0 auto 0 auto;
+}
+
+#img_morehouse {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+#row_dir {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#img_dir {
+    display: block;
+    margin: 0 auto 0 auto;
+    max-height: 300px;
+}
+
+.container-fluid {
+    padding-right: 30px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#cardio {
+    padding-top: 75px;
+}
+
+embed {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-bottom: 5%;
+}
+
+
+div.col-md-3 {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 10%;
+}
+
+#content {
+    padding-bottom: 5%;
+}
+
+footer {
+    background-color: #555;
+}
