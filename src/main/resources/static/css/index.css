@@ -1,3 +1,8 @@
+
+
+
+
+
 .jumbotron {
     padding-top: 0%;
     padding-bottom: 0%;
@@ -30,6 +35,7 @@
 
 #cardio {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 embed {
@@ -50,5 +56,7 @@ div.col-md-3 {
 }
 
 footer {
-    background-color: #555;
+    background-color:hsla(220,100%,20%,1.0);
+    color: white;
+    margin: 0 0 1em 0;
 }

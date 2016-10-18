@@ -1,5 +1,4 @@
-
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,54 +8,97 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-ul {
-  list-style: none;
+.dropbtn {
+background-color: hsla(220,100%,20%,0.9);
+color: white;
+padding: 16px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+cursor: pointer;
 }
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: red;
+color: white;
+}
+
+.dropdown {
+float: inherit;
+position: absolute;
+display: flex;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color:hsla(220,100%,20%,0.9); ;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: white}
+.dropdown a:hover {color: red}
+
+.show {display:block;}
+
+ul {
+list-style: none;
+}
+
 #col {
-  background-color: hsla(220,100%,20%,1.0);
+background-color: hsla(220,100%,20%,1.0);
 
 }
 
 
 #nav {
-	width: 104%;
-	float: left;
-	margin: 0 0 1em 0;
-	padding: 0;
-	background-color:hsla(220,100%,20%,0.9);
-	border-bottom: 1px solid #ccc;  }
+width: 104%;
+float: left;
+margin: 0 0 1em 0;
+padding: 0;
+background-color:hsla(220,100%,20%,0.9);
+border-bottom: 1px solid #ccc;  }
 #nav ul {
-	list-style: none;
-	width: 800px;
-	margin: 0 auto;
-	padding: 1.0; }
+list-style: none;
+width: 800px;
+margin: 0 auto;
+padding: 1.0; }
 #nav li {
-	float: left; }
+float: left; }
 #nav li a {
-	display: flex;;
-	padding: 9px 18.95;
-	text-decoration: none;
-	font-weight: bold;
-	color: white;
-	border-right: 0px solid #ccc; }
+display: flex;;
+padding: 9px 18.95;
+text-decoration: none;
+font-weight: bold;
+color: white;
+border-right: 0px solid #ccc; }
 #nav li:first-child a {
-	border-left: 1px solid #ccc; }
+border-left: 1px solid #ccc; }
 #nav li a:hover {
-	color: #c00;
-	background-color: #fff; }
+color: #c00;
+background-color: #fff; }
 #width {
-  width:750px;
+width:750px;
 margin:0 auto;
 }
 #word {
-  color :white;
+color :white;
 }
 #link {
-  color :red;
+color :red;
 }
 
 #link2 {
-  color :hsla(220,100%,20%,0.9);
+color :hsla(220,100%,20%,1.0);
 }
 
 
@@ -92,33 +134,44 @@ margin:0 auto;
 <!--grid columns should add up to twelve for a row-->
 <!-- Post Content -->
 <!--container is fixed and container-fluid doesnt-->
-<div class="container" align="center" id="content">
-      <img src="http://www.vibestrings.com/wp-content/uploads/2015/08/Contact-us1.jpg">
-      <br><br>
-      <form action="form.php" method="post">
-First Name: <input type="text" name="first_name"><br><br>
-Last Name: <input type="text" name="last_name"><br><br>
-Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email"><br><br>
-Message:<br><textarea rows="5" name="message" cols="30"></textarea><br><br>
-<input type="submit" name="submit" value="Submit">
-</form>
+<div class="container" id="content" align="center">
+
+  <h1 id="link" class="section-heading">CVRI Faculty Talks and Presentations</h1>
+  <br><hr><br>
 
 
 
 
+          <div align="center" class="col-sm-6" id="frame_right">
+                <h3> <a id="link" href="https://www.youtube.com/watch?v=9sRBQAOOdZc&nohtml5=False">CVRI Director Dr. Herman Taylor's Ted Talk</a><h3>
+                  <br><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9sRBQAOOdZc" frameborder="0" allowfullscreen></iframe><br>
+                <h3> <a id="link" href="https://www.youtube.com/watch?v=_rskanLH3UI&nohtml5=False">CVRI Director Dr. Herman Taylor's Introduction to MSM</a></h3><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_rskanLH3UI" frameborder="0" allowfullscreen></iframe><br>
+              </div>
 
-            <h4>Cardiovascular Research Institute</h4>
-            <h4>Morehouse School of Medicine</h4>
-            <h4>720 Westview Drive SW</h4>
-            <h4>Atlanta, GA 30310</h4><br>
-            <h4>Phone: (404) 752-1545</h4>
-            <h4>Fax: (404) 752-1042</h4>
-            <h4>Email: CVRI@msm.edu</h4><br><br>
+          <div align="center" class="col-sm-6" id="frame_right">
+            <h3> <a id="link" href="#">CVRI associate member Dr. Katema Paul's YouTube presentation</a></h3><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QkX0L8u7hdY" frameborder="0" allowfullscreen></iframe><br>
+            <h3> <a id="link" href="#">Dr. Katema Paul's Research Assistant</a></h3><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LqWyLWGlFV0" frameborder="0" allowfullscreen></iframe><br>
+          </div>
+
+          <div align="center" class="col-sm-12" id="frame_right">
+
+            <h3> <a id="link" href="#">APHA President & CVRI faculty member Dr. Camara Jones’s Ted Talk</a></h3><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GNhcY6fTyBM" frameborder="0" allowfullscreen></iframe><br>
+          </div>
+          <br><br><br><br><br>
+
 
 
       </div>
-
-
+<div class="conainer" id="content" align="center">
+<p>
+    <a id="link" href="facultyhome.html">Previous Page</a>
+</p>
+</div>
 
 
 

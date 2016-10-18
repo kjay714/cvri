@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .dropbtn {
+        background-color: hsla(220,100%,20%,0.9);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: red;
+        color: white;
+    }
+
+    .dropdown {
+        float: inherit;
+        position: absolute;
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:hsla(220,100%,20%,0.9); ;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {background-color: white}
+    .dropdown a:hover {color: red}
+
+    .show {display:block;}
+
+    #foot ul {
+      list-style: none;
+    }
+
+    #col {
+      background-color: hsla(220,100%,20%,1.0);
+
+    }
+
+
+    #nav {
+    	width: 104%;
+    	float: left;
+    	margin: 0 0 1em 0;
+    	padding: 0;
+    	background-color:hsla(220,100%,20%,0.9);
+    	border-bottom: 1px solid #ccc;  }
+    #nav ul {
+    	list-style: none;
+    	width: 800px;
+    	margin: 0 auto;
+    	padding: 1.0; }
+    #nav li {
+    	float: left; }
+    #nav li a {
+    	display: flex;;
+    	padding: 9px 18.95;
+    	text-decoration: none;
+    	font-weight: bold;
+    	color: white;
+    	border-right: 0px solid #ccc; }
+    #nav li:first-child a {
+    	border-left: 1px solid #ccc; }
+    #nav li a:hover {
+    	color: #c00;
+    	background-color: #fff; }
+    #width {
+      width:750px;
+    margin:0 auto;
+    }
+    #word {
+      color :white;
+    }
+    #link {
+      color :red;
+    }
+
+    #link2 {
+      color :hsla(220,100%,20%,1.0);
+    }
+
+    </style>
+</head>
+<body>
+
+<!--header image-->
+<div class="container">
+    <div class="jumbotron" style="background:transparent !important">
+        <a href="index.html" class="view">
+            <img class="img-responsive"
+                 src="../static/images/cvriheader.jpg">
+        </a>
+    </div>
+</div>
+
+<!--Navbar-->
+<div class="container" id="width">
+    <ul id="nav">
+        <!--list items-->
+        <li><a href="about.html" >About CVRI</a></li>
+        <li><a href="researchhome.html" >Research</a></li>
+        <li><a href="milestones.html" >Milestones</a></li>
+        <li><a href="director.html" >CVRI Director</a></li>
+        <li><a href="facultyhome.html" >Faculty</a></li>
+        <li><a href="projectshome.html" >Projects</a><li>
+        <li><a href="contactus.html" >Contact Us</a></li>
+
+    </ul>
+  </div>
+<!--Content -->
+<div align="center" class="container" id="content">
+  <h1 id="link">Research Programs</h1><br>
+  <p align="left">The Cardiovascular Research Institute embraces an inclusive, integrated and multi-disciplinary approach to research in
+    cardiovascular science. The Institute includes scientists from a variety of disciplines including: molecular biology, physiology,
+    biochemistry, molecular genetics, psychology, cell biology, medicine, biostatistics and epidemiology. Research programs in the Institute include:
+  </p><br>
+
+  <p id="link2"><b>Basic Science Programs</b><br><br>
+    <ul align="left">
+      <li>The analysis of gene expression profiles in vascular cells using DNA microarray technology to elucidate gene regulatory networks determining vascular cell biology.</li>
+      <br>
+      <li>The regulation of vascular cell fate and vessel structure by Notch signaling pathways.</li>
+      <br>
+      <li>The physiologic genomics of salt-sensitive hypertension.</li>
+      <br>
+      <li>The role of ID protein proteins as modulators of vascular cell gene transcription as critical determinants of vascular cell fate and vessel structure.</li>
+      <br>
+      <li>The molecular basis of vascular remodeling and the relative roles of cell proliferation versus apoptosis.</li>
+      <br>
+      <li>The role of nuclear receptors such as PPAR-g and PPAR-d as determinants of vascular function/structure.</li>
+      <br>
+      <li>The molecular basis of obesity-related vascular disease.</li>
+      <br>
+      <li>The molecular basis of diabetic vasculopathy.</li>
+      <br>
+      <li>The role of vasoactive factors as determinants of vascular physiology and cell biology.</li>
+      <br>
+      <li>The molecular basis of hypertrophic cardiomyopathy.</li>
+      <br>
+      <li>The mechanisms governing the intrinsic capacity of the heart to resist ischemic injury.</li>
+      <br>
+      <li>The vascular biology of stroke susceptibility in the context of obesity and hypertension.</li>
+
+    </ul>
+  </p><br><br><br><br>
+  <p id="link2"><b>Clinical Science Programs</b><br><br>
+    <ul align="left">
+      <li>The development of innovative clinical approaches and discovery of novel biomarkers to identify high risk patients and more effectively treat their cardiovascular disease.</li>
+      <br>
+      <li>The discovery of novel ethnic-specific DNA polymorphisms that may promote the genetic susceptibility to diabetes and hypertension.</li>
+      <br>
+      <li>The characterization of vascular physiology in humans at risk for cardiovascular complications such as myocardial infarction and stroke.</li>
+      <br>
+      <li>The role of genetic factors as determinants of vascular function and structure in patients at risk for cardiovascular complications such as myocardial infarction and stroke.</li>
+      <br>
+      <li>The enhancement of clinical interventions designed to prevent stroke and myocardial infarction in high-risk ethnic populations.</li>
+
+      </ul>
+  </p><br><br><br><br>
+  <p id="link2"><b>Population Science Programs</b><br><br>
+    <ul align="left">
+      <li>The role of psychosocial stress and racism as a determinant of cardiovascular outcomes in ethnic populations.</li>
+      <br>
+      <li>The influence of social factors as determinants of ethnic disparities in cardiovascular disease.</li>
+      <br>
+      <li>The characterization of geographic and ethnic differences in cardiovascular disease/stroke risk factors in urban versus rural settings.</li>
+      <br>
+      <li>To define the utility of vascular physiologic assays and novel biomarkers to identify high-risk subjects predisposed to myocardial infarction and stroke in community-based settings.</li>
+      <br>
+      <li>The genetic epidemiology of cardiovascular disease and stroke in ethnic populations.</li>
+      <br>
+      <li>The development of novel, culturally-sensitive intervention strategies to reduce the overall risk of cardiovascular disease in ethnic communities.</li>
+      <br>
+      <li>The implementation of strategies designed to enhance the capacity of individuals within ethnic communities to achieve higher standards of cardiovascular health.</li>
+    </ul><br><br><br><br><br>
+    <p align="left">
+      <a id="link" href="researchhome.html">Previous Page</a>
+    </p>
+  </div>
+
+
+
+<!-- Footer -->
+<footer id="footerWrapper" class="container">
+  <section id="mainFooter">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-8">
+          <div class="footerWidget text-center">
+
+            <h3>Morehouse School Of Medicine</h3>
+            <address>
+              <p> <i class="icon-location"></i>&nbsp;720 WESTVIEW DRIVE<br>
+                Atlanta, GA 30310<br>
+                <i class="icon-phone"></i>&nbsp;404-752-1500<br>
+
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="container-fluid">
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us</h3>
+              <ul class="col-sm-6">
+
+                <li><a href="https://www.facebook.com/MorehouseSchoolofMedicine" class="tips" title="follow me on Facebook"><img src="http://www.itsyourright.ie/wp-content/uploads/2014/10/facebook.png"/><i class="icon-facebook-1 iconRounded"></i></a></li><br>
+                <li><a href="https://twitter.com/MSMEDU" class="tips" title="follow me on Twitter"> <img src="http://www.studentclearinghouse.org/imgs/twitter-32.png"><i class="icon-twitter-bird iconRounded"></i></a></li>
+              </ul>
+              <ul class="col-sm-6">
+                <li><a href="https://www.youtube.com/user/TheMSMEDU" class="tips" title="follow me on Youtube"><img src="http://nvidiashieldzone.com/wp-content/themes/GamePlus/images/social-profiles/youtube.png"/><i class="icon-youtube-1 iconRounded"></i></a></li><br>
+                <li><a href="https://www.linkedin.com/edu/morehouse-school-of-medicine-18178" class="tips" title="follow me on Linkedin"><img src="http://paullafrancedesign.com/wp-content/uploads/2013/12/linkedin-icon-32x32.png"/> <i class="icon-linkedin-1 iconRounded"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footerRights">
+      <div class="container">
+        <div class="row">
+          <div class="footerWidget text-center">
+            <p>Copyright © 2016 MOREHOUSE SCHOOL OF MEDICINE / All rights reserved.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+</footer>
+
+
+</body>
+</html>

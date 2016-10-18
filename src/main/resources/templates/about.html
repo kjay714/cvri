@@ -1,4 +1,58 @@
-<html lang="en">
+<html5 lang="en">
+<style>
+ul {
+  list-style: none;
+}
+#col {
+  background-color: hsla(220,100%,20%,1.0);
+
+}
+
+
+#nav {
+	width: 104%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color:hsla(220,100%,20%,0.9);
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 1.0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: flex;;
+	padding: 9px 18.95;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 0px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
+#width {
+  width:750px;
+margin:0 auto;
+}
+#word {
+  color :white;
+}
+#link {
+  color :red;
+}
+
+#link2 {
+  color :hsla(220,100%,20%,0.9);
+}
+
+
+
+</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +61,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="home">
 
 <!--header image-->
 <div class="container">
@@ -20,48 +74,29 @@
 </div>
 
 <!--Navbar-->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+<div class="container" id="width">
+    <ul id="nav">
+        <!--list items-->
+        <li><a href="about.html" >About CVRI</a></li>
+        <li><a href="researchhome.html" >Research</a></li>
+        <li><a href="milestones.html" >Milestones</a></li>
+        <li><a href="director.html" >CVRI Director</a></li>
+        <li><a href="facultyhome.html" >Faculty</a></li>
+        <li><a href="projectshome.html" >Projects</a><li>
+        <li><a href="contactus.html" >Contact Us</a></li>
 
-        <!--Menu Items-->
-        <div class="navbar-collapse collapse" id="mainNavBar">
-            <!--unordered list left-->
-            <ul class="nav navbar-nav">
-                <!--list items-->
-                <li class="active"><a href="about.html">About CVRI</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="milestones.html">Milestones</a></li>
-
-            </ul>
-            <!--unordered list right-->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="director.html">CVRI Director</a></li>
-                <li><a href="#">Faculty</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+    </ul>
+  </div>
 <!--grid columns should add up to twelve for a row-->
 <!-- Post Content -->
 <!--container is fixed and container-fluid doesnt-->
-<div class="container-fluid" id="content">
-    <div class="row">
-        <div class="col-md-1">
-        </div>
+<div class="container" id="content">
 
-        <div class="col-md-7">
-            <h1 class="section-heading">Cardiovascular Research Institute</h1>
 
-            <p>The Cardiovascular Research Institute (CVRI) was established in July, 1999 as a Center of
+        <div align="center">
+            <h1 id="link" class="section-heading">Cardiovascular Research Institute</h1>
+
+            <p align="left">The Cardiovascular Research Institute (CVRI) was established in July, 1999 as a Center of
                 Research Excellence. The CVRI is one of the first cardiovascular institutes of its kind at a
                 historically minority institution. It was initially funded, in part, by a grant from the
                 National Institutes of Health (NIH) National Center for Minority Health and Health Disparities
@@ -70,18 +105,18 @@
                 multidisciplinary organization that transcends traditional academic departmental structures to
                 focus on advancing cardiovascular research and education.</p>
 
-            <p>Over the past decade, the CVRI has successfully recruited a talented critical mass of faculty
+            <p align="left">Over the past decade, the CVRI has successfully recruited a talented critical mass of faculty
                 with a wide breadth of scientific expertise that has enriched the intellectual capital of the
                 institution and created one of the largest research portfolios at MSM.</p>
 
-            <p>Our ongoing process of strategic planning and evaluation has enabled CVRI to build upon its
+            <p align="left">Our ongoing process of strategic planning and evaluation has enabled CVRI to build upon its
                 success and emerge as an internationally recognized Center of Excellence in cardiovascular
                 science. Our approach focuses on: faculty, research infrastructure and our future
                 scientists.</p>
 
-            <h2 class="section-heading">The Four Primary Goals of CVRI:</h2>
+            <h2 id="link" class="section-heading">The Four Primary Goals of CVRI:</h2>
 
-            <ul>
+            <ul align="left">
                 <li>To mentor and develop a critical mass of talented investigators that emerge as leaders of
                     independent research programs and cross-disciplinary, collaborative research teams.
                 </li>
@@ -99,65 +134,78 @@
                     translational, clinical and population science approaches to address racial/ethnic
                     disparities in cardiovascular health.
                 </li>
-            </ul>
+            </ul><br><hr><br><br>
         </div>
 
-        <div class="col-md-3">
+        <!--pfd letter-->
+          <section class="container-fluid" id="col">
+            <div id="content_row" align="center">
+                <h1 align="center" class="section-heading" id="word">Letter from <a id="link" href="http://www.msm.edu/Research/research_centersandinstitutes/CVRI/CVRIDirectorsLetter.pdf">Director Dr. Taylor</a></h1>
+
+
+
+
+
             <img class="img-responsive"
                  id="cardio"
                  src="../static/images/cardiovascular.jpg">
         </div>
-    </div>
-</div>
 
-<!--pfd letter-->
-<div class="container" id="content_container">
-    <div class="row" id="content_row">
-        <h1 align="center" class="section-heading">Letter from <a href="director.html">Director Dr. Taylor</a></h1>
-        <embed class="pdfobject" id="content_pdf" src="../static/pdf/cvridirectorsletter.pdf"
-               type="application/pdf" style="overflow: auto; width: 75%; height: 100%;" internalinstanceid="81"
-               title="">
-        </embed>
+      </section>
+      <br><br><br><hr>
     </div>
-</div>
+
+
+
 
 <!-- Footer -->
-<footer>
+<footer id="footerWrapper" class="container">
+  <section id="mainFooter">
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
 
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+        <div class="col-sm-8">
+          <div class="footerWidget text-center">
+
+            <h3>Morehouse School Of Medicine</h3>
+            <address>
+              <p> <i class="icon-location"></i>&nbsp;720 WESTVIEW DRIVE<br>
+                Atlanta, GA 30310<br>
+                <i class="icon-phone"></i>&nbsp;404-752-1500<br>
+
+              </address>
             </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="container-fluid">
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us</h3>
+              <ul class="col-sm-6">
+
+                <li><a href="https://www.facebook.com/MorehouseSchoolofMedicine" class="tips" title="follow me on Facebook"><img src="http://www.itsyourright.ie/wp-content/uploads/2014/10/facebook.png"/><i class="icon-facebook-1 iconRounded"></i></a></li><br>
+                <li><a href="https://twitter.com/MSMEDU" class="tips" title="follow me on Twitter"> <img src="http://www.studentclearinghouse.org/imgs/twitter-32.png"><i class="icon-twitter-bird iconRounded"></i></a></li>
+              </ul>
+              <ul class="col-sm-6">
+                <li><a href="https://www.youtube.com/user/TheMSMEDU" class="tips" title="follow me on Youtube"><img src="http://nvidiashieldzone.com/wp-content/themes/GamePlus/images/social-profiles/youtube.png"/><i class="icon-youtube-1 iconRounded"></i></a></li><br>
+                <li><a href="https://www.linkedin.com/edu/morehouse-school-of-medicine-18178" class="tips" title="follow me on Linkedin"><img src="http://paullafrancedesign.com/wp-content/uploads/2013/12/linkedin-icon-32x32.png"/> <i class="icon-linkedin-1 iconRounded"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <section id="footerRights">
+      <div class="container">
+        <div class="row">
+          <div class="footerWidget text-center">
+            <p>Copyright © 2016 MOREHOUSE SCHOOL OF MEDICINE / All rights reserved.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 </footer>
+
 
 </body>
 </html>

@@ -1,4 +1,92 @@
-<html lang="en">
+<html5 lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing:border-box}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 7.0s;
+  animation-name: fade;
+  animation-duration: 7.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+ul {
+  list-style: none;
+}
+
+#nav {
+	width: 104%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color:hsla(220,100%,20%,0.9);
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 1.0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: flex;;
+	padding: 9px 18.95;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 0px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
+#width {
+  width:750px;
+margin:0 auto;
+}
+#word {
+  color :white;
+}
+#link {
+  color :red;
+}
+
+</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,66 +108,116 @@
 </div>
 
 <!--Navbar-->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
 
-        <!--Menu Items-->
-        <div class="navbar-collapse collapse" id="mainNavBar">
-            <!--unordered list left-->
-            <ul class="nav navbar-nav">
+
+        <div class="container" id="width">
+            <ul id="nav">
                 <!--list items-->
-                <li><a href="about.html">About CVRI</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="milestones.html">Milestones</a></li>
-
+                <li><a href="about.html" >About CVRI</a></li>
+                <li><a href="researchhome.html" >Research</a></li>
+                <li><a href="milestones.html" >Milestones</a></li>
+                <li><a href="director.html" >CVRI Director</a></li>
+                <li><a href="facultyhome.html" >Faculty</a></li>
+                <li><a href="projectshome.html" >Projects</a><li>
+                <li><a href="contactus.html" >Contact Us</a></li>
             </ul>
-            <!--unordered list right-->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="director.html">CVRI Director</a></li>
-                <li><a href="#">Faculty</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+          </div>
 
-<!--image below navbar-->
-<div class="container">
-    <div class="row">
-        <img class="img-responsive"
-             id="img_morehouse"
-             src="../static/images/morehouseclip.jpg">
-    </div>
-</div>
+            <!--slideshow-->
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-        </div>
-        <div class="col-md-4">
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-        </div>
-        <div class="col-md-4">
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page
-                scroll.</p>
-        </div>
-    </div>
-</div>
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="http://www.seaetc.com/wp-content/uploads/2016/05/moorehouse-georgia-feature-event.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/home/kevin/Dev Folder/cvri-master/src/main/resources/static/images/imageedit_3_8733316447 resize.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/home/kevin/Dev Folder/cvri-master/src/main/resources/static/images/imageedit_5_7911056965 resize.jpg" style="width:100%">
+
+            </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+            </script>
+
+            <!-- Footer -->
+            <footer id="footerWrapper" class="container">
+            	<section id="mainFooter">
+            		<div class="container-fluid">
+            			<div class="row">
+
+            				<div class="col-sm-8">
+            					<div class="footerWidget text-center">
+
+            						<h3>Morehouse School Of Medicine</h3>
+            						<address>
+            							<p> <i class="icon-location"></i>&nbsp;720 WESTVIEW DRIVE<br>
+            								Atlanta, GA 30310<br>
+            								<i class="icon-phone"></i>&nbsp;404-752-1500<br>
+
+            							</address>
+            						</div>
+            					</div>
+            					<div class="col-sm-3">
+            						<div class="container-fluid">
+                          <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us</h3>
+            							<ul class="col-sm-6">
+
+            								<li><a href="https://www.facebook.com/MorehouseSchoolofMedicine" class="tips" title="follow me on Facebook"><img src="http://www.itsyourright.ie/wp-content/uploads/2014/10/facebook.png"/><i class="icon-facebook-1 iconRounded"></i></a></li><br>
+            								<li><a href="https://twitter.com/MSMEDU" class="tips" title="follow me on Twitter"> <img src="http://www.studentclearinghouse.org/imgs/twitter-32.png"><i class="icon-twitter-bird iconRounded"></i></a></li>
+                          </ul>
+                          <ul class="col-sm-6">
+            								<li><a href="https://www.youtube.com/user/TheMSMEDU" class="tips" title="follow me on Youtube"><img src="http://nvidiashieldzone.com/wp-content/themes/GamePlus/images/social-profiles/youtube.png"/><i class="icon-youtube-1 iconRounded"></i></a></li><br>
+            								<li><a href="https://www.linkedin.com/edu/morehouse-school-of-medicine-18178" class="tips" title="follow me on Linkedin"><img src="http://paullafrancedesign.com/wp-content/uploads/2013/12/linkedin-icon-32x32.png"/> <i class="icon-linkedin-1 iconRounded"></i></a></li>
+
+                          </ul>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            		</section>
+            		<section id="footerRights">
+            			<div class="container">
+            				<div class="row">
+            					<div class="footerWidget text-center">
+            						<p>Copyright © 2016 MOREHOUSE SCHOOL OF MEDICINE / All rights reserved.</p>
+            					</div>
+
+            				</div>
+            			</div>
+            		</section>
+            </footer>
+
 </body>
 </html>

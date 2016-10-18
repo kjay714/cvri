@@ -7,6 +7,60 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+ul {
+  list-style: none;
+}
+#col {
+  background-color: hsla(220,100%,20%,1.0);
+
+}
+
+
+#nav {
+	width: 104%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color:hsla(220,100%,20%,0.9);
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 1.0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: flex;;
+	padding: 9px 18.95;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 0px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
+#width {
+  width:750px;
+margin:0 auto;
+}
+#word {
+  color :white;
+}
+#link {
+  color :red;
+}
+
+#link2 {
+  color :hsla(220,100%,20%,0.9);
+}
+
+
+
+</style>
 <body>
 
 <!--header image-->
@@ -20,52 +74,35 @@
 </div>
 
 <!--Navbar-->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+<div class="container" id="width">
+    <ul id="nav">
+        <!--list items-->
+        <li><a href="about.html" >About CVRI</a></li>
+        <li><a href="researchhome.html" >Research</a></li>
+        <li><a href="milestones.html" >Milestones</a></li>
+        <li><a href="director.html" >CVRI Director</a></li>
+        <li><a href="facultyhome.html" >Faculty</a></li>
+        <li><a href="projectshome.html" >Projects</a><li>
+        <li><a href="contactus.html" >Contact Us</a></li>
 
-        <!--Menu Items-->
-        <div class="navbar-collapse collapse" id="mainNavBar">
-            <!--unordered list left-->
-            <ul class="nav navbar-nav">
-                <!--list items-->
-                <li><a href="about.html">About CVRI</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="milestones.html">Milestones</a></li>
-
-            </ul>
-            <!--unordered list right-->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="director.html">CVRI Director</a></li>
-                <li><a href="#">Faculty</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+    </ul>
+  </div>
 <!--image below navbar-->
-<div class="container-fluid">
+<div class="container">
     <div class="row" id="row_dir">
 
 
         <div class="col-md-6 col-md-push-3">
 
-            <h1 class="section-heading">CVRI Director</h1>
+            <h1 id="link" class="section-heading">CVRI Director</h1>
 
             <img class="img-responsive"
                  id="img_dir"
                  src="../static/images/drhermantaylor.jpg">
 
-            <h3 class="section-heading">Herman A. Taylor, M.D., MPH, FACC, FAHA</h3>
-            <h4 class="section-heading">Director and Endowed Professor</h4>
-            <h4 class="section-heading">Cardiovascular Research Institute</h4>
+            <h3 id="link2" class="section-heading">Herman A. Taylor, M.D., MPH, FACC, FAHA</h3>
+            <h4 id="link2" class="section-heading">Director and Endowed Professor</h4>
+            <h4 id="link2" class="section-heading">Cardiovascular Research Institute</h4>
         </div>
 
         <div class="col-md-3 col-md-pull-6" id="frame_left">
@@ -129,42 +166,53 @@
 </div>
 
 <!-- Footer -->
-<footer>
+<footer id="footerWrapper" class="container">
+  <section id="mainFooter">
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
 
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+        <div class="col-sm-8">
+          <div class="footerWidget text-center">
+
+            <h3>Morehouse School Of Medicine</h3>
+            <address>
+              <p> <i class="icon-location"></i>&nbsp;720 WESTVIEW DRIVE<br>
+                Atlanta, GA 30310<br>
+                <i class="icon-phone"></i>&nbsp;404-752-1500<br>
+
+              </address>
             </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="container-fluid">
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us</h3>
+              <ul class="col-sm-6">
+
+                <li><a href="https://www.facebook.com/MorehouseSchoolofMedicine" class="tips" title="follow me on Facebook"><img src="http://www.itsyourright.ie/wp-content/uploads/2014/10/facebook.png"/><i class="icon-facebook-1 iconRounded"></i></a></li><br>
+                <li><a href="https://twitter.com/MSMEDU" class="tips" title="follow me on Twitter"> <img src="http://www.studentclearinghouse.org/imgs/twitter-32.png"><i class="icon-twitter-bird iconRounded"></i></a></li>
+              </ul>
+              <ul class="col-sm-6">
+                <li><a href="https://www.youtube.com/user/TheMSMEDU" class="tips" title="follow me on Youtube"><img src="http://nvidiashieldzone.com/wp-content/themes/GamePlus/images/social-profiles/youtube.png"/><i class="icon-youtube-1 iconRounded"></i></a></li><br>
+                <li><a href="https://www.linkedin.com/edu/morehouse-school-of-medicine-18178" class="tips" title="follow me on Linkedin"><img src="http://paullafrancedesign.com/wp-content/uploads/2013/12/linkedin-icon-32x32.png"/> <i class="icon-linkedin-1 iconRounded"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <section id="footerRights">
+      <div class="container">
+        <div class="row">
+          <div class="footerWidget text-center">
+            <p>Copyright © 2016 MOREHOUSE SCHOOL OF MEDICINE / All rights reserved.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 </footer>
+
 
 </body>
 </html>
